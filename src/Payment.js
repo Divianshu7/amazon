@@ -27,7 +27,7 @@ function Payment() {
     }
     useEffect(() => {
         const getClientSecret = async () => {
-            const response = await axios.post(`http://localhost:5000/api/payment/create?total=${getBasketTotal(basket) * 100}`);
+            const response = await axios.post(`https://amazon-api-mn9j.onrender.com/api/payment/create?total=${getBasketTotal(basket) * 100}`);
             console.log(response)
             setClientSecret(response.data.clientSecret)
         }
@@ -58,7 +58,7 @@ function Payment() {
             })
             const newUser = user
             newUser.basket = []
-            localStorage.setItem('amazon-user', newUser)
+            localStorage.setItem('amazon-user', JSON.stringify(newUser))
             history(`/orders`, { replace: true })
         }
         catch (err) {

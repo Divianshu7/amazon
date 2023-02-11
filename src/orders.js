@@ -14,7 +14,7 @@ function Orders() {
             const getOrders = async () => {
                 console.log(user.email)
                 const email = user.email
-                const res = await axios.post(`http://localhost:5000/api/orders`, user)
+                const res = await axios.post(`https://amazon-api-mn9j.onrender.com/api/orders`, user)
                 setOrders(res.data)
 
             }

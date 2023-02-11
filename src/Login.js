@@ -10,7 +10,7 @@ function Login() {
     const signIn = async (e) => {
         e.preventDefault()
         try {
-            const res = await axios.post('http://localhost:5000/api/login', {
+            const res = await axios.post('https://amazon-api-mn9j.onrender.com/api/login', {
                 email, password
             })
             if (res.data.status === true) {
@@ -30,7 +30,7 @@ function Login() {
     const register = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/api/register', {
+            const res = await axios.post('https://amazon-api-mn9j.onrender.com/api/register', {
                 email, password
             })
             // console.log(res)
