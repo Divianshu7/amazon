@@ -1,0 +1,15 @@
+.ordersContainer {
+    padding: 30px;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+
+}
+
+.orderr {
+    width: 97%;
+    background-color: white;
+    padding: 20px;
+    margin: 0 20px 20px 0;
+    position: relative;
+}

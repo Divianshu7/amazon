@@ -1,0 +1,17 @@
+.order {
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+.orderId {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.price>button {
+    background: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    width: 100%;
+}

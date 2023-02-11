@@ -1,0 +1,29 @@
+.checkoutProduct {
+    display: flex;
+    padding: 0px;
+
+
+}
+
+.checkoutProductRating {
+    display: flex;
+}
+
+.checkoutProductImage {
+    max-height: 200px;
+
+}
+
+.checkoutProductTitle {
+    font-weight: 800;
+    padding: 20px 0;
+}
+
+.buttons {
+    padding-top: 20px;
+    display: flex;
+}
+
+.checkoutProductInfo {
+    padding-left: 20px;
+}

@@ -1,0 +1,87 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    margin: 0 0 70px 0;
+}
+
+.headerLogo {
+    width: 200px;
+    object-fit: contain;
+    margin: 15px 20px 0 0;
+}
+
+.headerSearch {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border-radius: 24px;
+}
+
+.headerSearchIn {
+    border: none;
+    padding: 10px;
+    height: 13px;
+    width: 100%;
+}
+
+.headerSearchIcon {
+    padding: 5px;
+    background-color: #cd9042;
+    height: 22px;
+}
+
+.headerOption {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    color: white;
+}
+
+.headerNav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headerOptionLineOne {
+    font-size: 10px;
+}
+
+.headerOptionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.headerBasket {
+    color: white !important;
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.headerBasketCount {
+    margin: 0 10px;
+    align-items: center;
+}
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+    color: white;
+    text-decoration: none;
+    cursor: crosshair;
+    align-items: center;
+    display: flex;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+}
