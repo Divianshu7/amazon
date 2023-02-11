@@ -27,7 +27,7 @@ function Payment() {
     }
     useEffect(() => {
         const getClientSecret = async () => {
-            const response = await axios.post(`https://amazon-api-mn9j.onrender.com/api/payment/create?total=${getBasketTotal(basket) * 100}`);
+            const response = await axios.post(`https://amazon-api-mn9j.onrender.com/api/payment/create?total=${Math.round(getBasketTotal(basket) * 100)}`);
             console.log(response)
             setClientSecret(response.data.clientSecret)
         }
@@ -48,7 +48,7 @@ function Payment() {
                 }
             })
             const sendData = [payload.paymentIntent, { email: user.email, basket: basket, amount: payload.paymentIntent.amount, created: payload.paymentIntent.created }]
-            const res = await axios.post(`http://localhost:5000/api/order`, sendData)
+            const res = await axios.post(`https://amazon-api-mn9j.onrender.com/api/order`, sendData)
             console.log(res.data)
             setSucceeded(true)
             setError(null)
